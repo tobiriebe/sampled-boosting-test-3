@@ -3,7 +3,7 @@ library(BatchExperiments)
 library(dplyr)
 
 #
-reg = loadRegistry("mytest-files")
+reg = loadRegistry("mytest3D-files")
 showStatus(reg)
 
 #getJobInfo(reg, findExpired(reg)) 
