@@ -133,7 +133,7 @@ sampledboosting.wrapper <- function(dynamic, sampleRatio ){
     nOuterFolds <- 10 #number of folds
     redSteps <- 100 #number of steps to run for the reduction in voxels
     sampleRatio = sampleRatio #ratio of voxels to REMOVE
-    fixedMstop <- 500
+    fixedMstop <- 100
     fixedNu <- 0.1
     dynamic <- dynamic
     localRun <- TRUE
