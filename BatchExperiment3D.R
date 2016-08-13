@@ -377,7 +377,7 @@ addAlgorithm(reg, id = "sampledboosting", fun = sampledboosting.wrapper)
 
 
 # Define problem parameters:
-pars = list(simulations = 2, predictors = 8000)
+pars = list(simulations = 100, predictors = 8000)
 mytest3D.design = makeDesign("mytest3D", exhaustive = pars)
 
 # Define sampledboosting parameters:
@@ -402,5 +402,5 @@ addExperiments(reg, prob.designs = mytest3D.design,
 summarizeExperiments(reg)
 
 # Submit the jobs to the batch system
-submitJobs(reg, resources = list(walltime = 60L*60L*4L, memory = 2200L), max.retries = 10L)
+submitJobs(reg, resources = list(walltime = 60L*60L*7L, memory = 250000L), max.retries = 10L)
 
